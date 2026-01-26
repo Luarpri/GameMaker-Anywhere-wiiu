@@ -14,6 +14,7 @@ A heavy work in progress port of gamemaker to several consoles (3ds only current
 </p>
 
 ## Current Progress
+Feel free to contribute! (i really need the help...)
 
 ### Complete
 - Setting X and Y  
