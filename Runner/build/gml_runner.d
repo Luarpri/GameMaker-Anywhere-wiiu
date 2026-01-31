@@ -1,4 +1,5 @@
-main.o: D:/Projects/GitHub/GameMaker-Anywhere/Runners/3DS/source/main.c \
+gml_runner.o: \
+ D:/Projects/GitHub/GameMaker-Anywhere/Runner/source/gml_runner.c \
  C:/devkitPro/libctru/include/citro2d.h \
  C:/devkitPro/libctru/include/citro3d.h \
  C:/devkitPro/libctru/include/c3d/types.h \
@@ -109,9 +110,9 @@ main.o: D:/Projects/GitHub/GameMaker-Anywhere/Runners/3DS/source/main.c \
  C:/devkitPro/libctru/include/c2d/sprite.h \
  C:/devkitPro/libctru/include/c2d/text.h \
  C:/devkitPro/libctru/include/c2d/font.h \
- D:/Projects/GitHub/GameMaker-Anywhere/Runners/3DS/source/cJSON.h \
- D:/Projects/GitHub/GameMaker-Anywhere/Runners/3DS/source/gml_functions.h \
- D:/Projects/GitHub/GameMaker-Anywhere/Runners/3DS/source/gml_runner.h
+ D:/Projects/GitHub/GameMaker-Anywhere/Runner/source/gml_functions.h \
+ D:/Projects/GitHub/GameMaker-Anywhere/Runner/source/cJSON.h \
+ D:/Projects/GitHub/GameMaker-Anywhere/Runner/source/gml_runner.h
 C:/devkitPro/libctru/include/citro2d.h:
 C:/devkitPro/libctru/include/citro3d.h:
 C:/devkitPro/libctru/include/c3d/types.h:
@@ -222,6 +223,6 @@ C:/devkitPro/libctru/include/c2d/spritesheet.h:
 C:/devkitPro/libctru/include/c2d/sprite.h:
 C:/devkitPro/libctru/include/c2d/text.h:
 C:/devkitPro/libctru/include/c2d/font.h:
-D:/Projects/GitHub/GameMaker-Anywhere/Runners/3DS/source/cJSON.h:
-D:/Projects/GitHub/GameMaker-Anywhere/Runners/3DS/source/gml_functions.h:
-D:/Projects/GitHub/GameMaker-Anywhere/Runners/3DS/source/gml_runner.h:
+D:/Projects/GitHub/GameMaker-Anywhere/Runner/source/gml_functions.h:
+D:/Projects/GitHub/GameMaker-Anywhere/Runner/source/cJSON.h:
+D:/Projects/GitHub/GameMaker-Anywhere/Runner/source/gml_runner.h:

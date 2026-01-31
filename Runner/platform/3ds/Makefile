@@ -6,6 +6,8 @@ ifeq ($(strip $(DEVKITARM)),)
 $(error "Please set DEVKITARM in your environment. export DEVKITARM=<path to>devkitARM")
 endif
 
+CORRECT_MAKEFILE := $(abspath $(lastword $(MAKEFILE_LIST)))
+
 TOPDIR ?= $(CURDIR)
 include $(DEVKITARM)/3ds_rules
 
@@ -155,25 +157,25 @@ endif
 .PHONY : clean all bootstrap 3dsx cia elf 3ds citra release
 
 all : bootstrap
-	@$(MAKE) --no-print-directory -C $(BUILD) -f $(CURDIR)/Makefile
+	@$(MAKE) --no-print-directory -C $(BUILD) -f $(CORRECT_MAKEFILE)
 
 3dsx : bootstrap
-	@$(MAKE) --no-print-directory -C $(BUILD) -f $(CURDIR)/Makefile $@
+	@$(MAKE) --no-print-directory -C $(BUILD) -f $(CORRECT_MAKEFILE) $@
 
 cia : bootstrap
-	@$(MAKE) --no-print-directory -C $(BUILD) -f $(CURDIR)/Makefile $@
+	@$(MAKE) --no-print-directory -C $(BUILD) -f $(CORRECT_MAKEFILE) $@
 
 3ds : bootstrap
-	@$(MAKE) --no-print-directory -C $(BUILD) -f $(CURDIR)/Makefile $@
+	@$(MAKE) --no-print-directory -C $(BUILD) -f $(CORRECT_MAKEFILE) $@
 
 elf : bootstrap
-	@$(MAKE) --no-print-directory -C $(BUILD) -f $(CURDIR)/Makefile $@
+	@$(MAKE) --no-print-directory -C $(BUILD) -f $(CORRECT_MAKEFILE) $@
 
 citra : bootstrap
-	@$(MAKE) --no-print-directory -C $(BUILD) -f $(CURDIR)/Makefile $@
+	@$(MAKE) --no-print-directory -C $(BUILD) -f $(CORRECT_MAKEFILE) $@
 
 release : bootstrap
-	@$(MAKE) --no-print-directory -C $(BUILD) -f $(CURDIR)/Makefile $@
+	@$(MAKE) --no-print-directory -C $(BUILD) -f $(CORRECT_MAKEFILE) $@
 
 bootstrap :
 	@[ -d $(BUILD) ] || mkdir -p $(BUILD)
